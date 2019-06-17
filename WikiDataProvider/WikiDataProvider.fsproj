@@ -5,7 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <Compile Include="paket-files\fsprojects\FSharp.TypeProviders.SDK\src\ProvidedTypes.fs" />
+    <Compile Include="paket-files\fsprojects\FSharp.TypeProviders.SDK\src\ProvidedTypes.fsi" />
+    <Compile Include="paket-files\fsprojects\FSharp.TypeProviders.SDK\src\ProvidedTypesTesting.fs" />
+    <None Include="paket-files\.gitignore" />
+    <None Include="paket-files\fsharp\FAKE\modules\Octokit\Octokit.fsx" />
+    <None Include="paket-files\fsharp\FAKE\modules\Octokit\paket.version" />
+    <None Include="paket-files\fsprojects\FSharp.TypeProviders.SDK\src\paket.version" />
+    <None Include="paket-files\paket.restore.cached" />
+    <Compile Include="WikiDataProvider.fs" />
+    <None Include="paket.references" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SourceLink.Embed.PaketFiles" Version="2.8.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
