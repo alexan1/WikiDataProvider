@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Compile Include="paket-files\fsprojects\FSharp.TypeProviders.SDK\src\ProvidedTypes.fs" />
-    <Compile Include="paket-files\fsprojects\FSharp.TypeProviders.SDK\src\ProvidedTypes.fsi" />
     <Compile Include="paket-files\fsprojects\FSharp.TypeProviders.SDK\src\ProvidedTypesTesting.fs" />
     <None Include="paket-files\.gitignore" />
     <None Include="paket-files\fsharp\FAKE\modules\Octokit\Octokit.fsx" />
