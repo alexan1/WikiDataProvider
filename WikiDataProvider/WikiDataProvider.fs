@@ -14,4 +14,8 @@ type WikiDataTypeProvider(config: TypeProviderConfig) as this =
 // Generate namespace and type 'FSharp.Data.WikiDataProvider'
     let asm = Assembly.GetExecutingAssembly()
     let ns = "FSharp.Data.WikiDataProvider"
-    let wikidataProvTy = ProvidedTypeDefinition(asm, ns, "WikiDataProvider", None, hideObjectMethods=true, nonNullable=true)
+    let wikidataProvTy = ProvidedTypeDefinition(asm, ns, "WikiDataProvider", Some typeof<obj>)
+    do this.AddNamespace(ns, [wikidataProvTy])
+
+[<assembly:TypeProviderAssembly>]
+do ()
